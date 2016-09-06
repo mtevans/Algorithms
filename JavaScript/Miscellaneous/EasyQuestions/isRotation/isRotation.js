@@ -2,7 +2,7 @@
 
 function isRotation(s1, s2){
   if(s1.length !== s2.length){
-    return false
+     return false
   }
   for (var i = 0; i < s1.length; i++) {
    var substring = s1.slice(0,i+1)
