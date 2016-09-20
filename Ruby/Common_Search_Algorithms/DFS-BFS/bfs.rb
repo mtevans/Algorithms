@@ -2,12 +2,12 @@
 def bfs(target, &prc)
 
   prc ||= Proc.new{|node| node.value === target}
-  stack = [self]
+  nodes = [self]
 
-  until stack.empty?
-    node = stack.shift
+  until nodes.empty?
+    node = nodes.shift
     return node if prc.call(node)
-    stack.concat(node.children)
+    nodes.concat(node.children)
   end
 
 

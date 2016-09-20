@@ -1,13 +1,10 @@
 "use strict";
-
-
 /// mergeSort
 function mergeSort(arr) {
   if (arr.length < 2) {return arr;}
   let pivot = Math.floor(arr.length / 2);
   let left =  arr.slice(0, pivot);
   let right = arr.slice(pivot);
-
   return merge(mergeSort(left), mergeSort(right));
 }
 
@@ -191,8 +188,6 @@ Array.prototype.myTranspose = function () {
   let results = [];
   let span = this[0].length;
   if (this.length > this[0].length){ let span = this.length ;}
-
-
   for (let i = 0 ; i < span; i++){
     let sub_arr = [];
     this.forEach(function(el) {
