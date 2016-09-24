@@ -93,7 +93,7 @@ function insertionSort(arr){
       if( item >= arr[j]){
         keepGoing = false
       }
-      if(item < arr[j]) {
+      if(item < arr[j]){
         arr[j+ 1] = arr[j]
         arr[j] = item
       }
